@@ -49,7 +49,7 @@
     <th id="per"></th>    
     </table>
 </center>
-<!-- <script>
+ <script> 
     var name=prompt("Enter Your Name");
     var Roll_No=prompt("Enter Your Roll-No");
     var standard=prompt("Enter Your Class");
@@ -62,18 +62,41 @@
     alert("Your Total Marks is= "+Total);
     var percentage=Total/500 *100;
     alert("Your Percentage is= "+percentage);
-    alert("Marksheet\n" +"1. MATHS= " +Maths+"\n2. ENGLISH="+English+"\n3. PHYSICS="+Physics+"\n4. CHEMISTRY="+Chemistry+"\n5. URDU="+Urdu +"\n\t\t The Total Marks:"+Total+" /500" + "\n\t\t Percentage="+percentage + "%"+"\n\t\t" + "congratulation!!");
-    
-    window.document.getElementById("U").innerHTML=Urdu;
-    window.document.getElementById("M").innerHTML=Maths;
-    window.document.getElementById("C").innerHTML=Chemistry;
-    window.document.getElementById("P").innerHTML=Physics;
-    window.document.getElementById("E").innerHTML=English;
-    window.document.getElementById("per").innerHTML=percentage + "%" +"congratulation";
+    if (percentage >=90){
+        alert("Your Grade Is = A+1");
+     }
+     else if(percentage >=80){
+         alert("Your Grade Is = A");
+     }
+     else if(percentage >=70){
+         alert("Your Grade Is = B");
+     }
+     else if(percentage >=60){
+         alert("Your Grade Is = C");
+     }
+     else if(percentage >=50){
+         alert("Your Grade Is = D");
+     }
+     else if(percentage >=40){
+         alert("Your Grade Is = E");
+     }
+     
+     else{
+         alert("Your Grade Is = Failed");
+     }
+     
 
+    alert("Marksheet\n" +"1. MATHS= " +Maths+"\n2. ENGLISH="+English+"\n3. PHYSICS="+Physics+"\n4. CHEMISTRY="+Chemistry+"\n5. URDU="+Urdu +"\n\t\t The Total Marks:"+Total+" /500" + "\n\t\t Percentage="+percentage + "%"+ "\n\t\t" + "congratulation!!");
     
-</script> -->
-        
+    document.getElementById("U").innerHTML=Urdu;
+    document.getElementById("M").innerHTML=Maths;
+    document.getElementById("C").innerHTML=Chemistry;
+    document.getElementById("P").innerHTML=Physics;
+    document.getElementById("E").innerHTML=English;
+    document.getElementById("per").innerHTML=percentage + "%" +"congratulation";
+    
+</script>
+         
     
 </body>
 </html>
